@@ -76,6 +76,7 @@ var Browser = function (_EventEmitter) {
 
     _this.options = merge(defaultOptions, options);
     _this.host = _this.options.chrome.host;
+    _this.port = _this.options.chrome.port;
     _this._tabs = []; // TODO: This array must be initialized with the list of tabs of the attached Chrome instance (if the chrome instance is not new but a remote one with existing tabs, this should be autocompleted from that instance)
     _this._closedTabs = []; // This keeps track of closed tab ids
     return _this;
